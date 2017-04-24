@@ -1,0 +1,75 @@
+Aluno: Rafael Prado     0050010591
+Prova de Laboratorio de Sistemas Operacionais
+Professor: Alex Salgado
+1o. Semestre de 2017   Turno: Noite            AV1
+--------------------------------------------------
+Com relação aos comandos do SO Linux, responda as perguntas abaixo:
+
+
+1 - Quais são as famílias de distruição das seguintes versões de linux:
+a-ubuntu; b-openSUSE e c-CentOS?
+Resposta: 
+a-debian family systems 
+b-SUSE family systems 
+c-Fedora family systems
+
+2 - Renomear o arquivo prova1-2017.txt da sua pasta para prova1-seunome.txt . 
+Ex.: prova1-alex.txt
+Resposta (Qual comando você utilizou?):
+mv prova1-2017.txt prova1-rafael.txt
+
+
+3 - Crie 3 arquivos em branco que comecem com seu nome e termina com uma 
+sequencia 1, 2 e 3. 
+Ex.: alex1.txt, alex2.txt, alex3.txt. Que comandos você utilizou?
+Resposta:
+ cat > rafael1.txt
+ cat > rafael2.txt
+ cat > rafael3.txt
+
+4 - Listar todos os arquivos vazios a partir da sua pasta principal e 
+direcionar a saida para o terceiro arquivo do item anterior.
+Resposta (Qual comando utilizou?):
+find -type f -empty > rafael3.txt 
+
+5 - Crie 1 pasta com seu nome+diadenascimento (ex.:alex25) e copie os 
+3 arquivos criandos anteriormente para esta pasta.
+Resposta (Qual comando utilizou?): 
+mkdir rafael28
+cp rafael1.txt rafael28
+cp rafael2.txt rafael28
+cp rafael3.txt rafael28
+
+6 - Utilizando wildcards, qual o comando para listar todos os arquivos 
+que comecem com seu nome e termina com o numeral de 1 a 3 com extensão .txt?
+Resposta:
+ls rafael[1-3].txt
+
+7 - Existe um arquivo chamado access.log na sua pasta log. 
+Qual é o ip que aparece no arquivo com mais frequencia e 
+qual ip que aparece no arquivo com menos frequencia?
+Resposta 1 :
+mais frquencia:75.113.188.234
+menos frequencia:101.163.230.250
+
+Resposta 2 (qual comando você utilizou? ):
+uniq -d access.log
+
+
+8 - Usando um comando linux, baixar o arquivo a seguir na sua 
+pasta principal http://evc-cit.info/cit052/grepdata.txt
+Resposta 1 (qual comando você utilizou?):
+wget http://evc-cit.info/cit052/grepdata.txt
+
+9 - Com relação ao arquivo baixado no item anterior: 
+Imprima todas as linhas que contenham uma vogal (a, e, i, o ou u) 
+seguido de um único caractere seguido pela mesma vogal novamente. 
+Assim, encontrará "eve" ou "adam" mas não "vera". Dica: \( e \) 
+Resposta:
+
+
+10 - Listar todo o conteudo (todos os arquivos e pastas)
+a partir de sua pasta principal e direcionar a saida 
+para o segundo arquivo do item 4.
+Resposta (comando utilizado): 
+ls  > rafael2.txt
